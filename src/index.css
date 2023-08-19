@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.enable {
+  z-index: 100;
+}
+
+.disable {
+  opacity: 0;
+  transition: all 0.7s ease-in; 
+}
+
+.ant-form-item-explain-error {
+  margin: 0.3rem 0 0.6rem;
+}
+
+.ant-modal-title {
+  font-size: 1.4rem !important;
+}

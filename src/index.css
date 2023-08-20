@@ -7,6 +7,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(67, 58, 58);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(72, 67, 67, 0.2);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -18,7 +32,7 @@ code {
 
 .disable {
   opacity: 0;
-  transition: all 0.7s ease-in; 
+  transition: all 0.7s ease-in;
 }
 
 .ant-form-item-explain-error {

@@ -109,7 +109,7 @@ const Home = () => {
                         </Breadcrumb>
                         <div
                             style={{
-                                padding: 24,
+                                padding: 14,
                                 minHeight: 360,
                                 background: colorBgContainer,
                             }}

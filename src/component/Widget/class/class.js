@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import customAxios from '../../../lib/axios';
-import { Table, Button, Tooltip } from 'antd';
+import { Table, Button } from 'antd';
 import { theme } from 'antd';
 import { Header } from 'antd/es/layout/layout';
 import { ReloadOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons'

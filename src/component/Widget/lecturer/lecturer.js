@@ -3,8 +3,8 @@ import customAxios from '../../../lib/axios';
 import { Table, Button } from 'antd';
 import { theme } from 'antd';
 import { Header } from 'antd/es/layout/layout';
-import { ReloadOutlined, EditOutlined, DeleteOutlined, InfoCircleOutlined } from '@ant-design/icons'
-import moment from 'moment/moment';
+import { ReloadOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons'
+import dayjs from 'dayjs';
 
 const Lecturer = () => {
     const [lecturers, setLecturers] = useState([]);
@@ -67,7 +67,7 @@ const Lecturer = () => {
                             title: 'Ngày sinh',
                             dataIndex: 'birthday',
                             key: 'birthday',
-                            render: ((date) => dateFormat(date))
+                            render: ((date) => dayjs(date).format("DD-MM-YYYY"))
                         },
                         {
                             title: 'Giới tính',
@@ -118,7 +118,3 @@ const Lecturer = () => {
 }
 
 export default Lecturer
-
-export const dateFormat = (date) => {
-    return moment(date).format("DD-MM-YYYY");
-}
